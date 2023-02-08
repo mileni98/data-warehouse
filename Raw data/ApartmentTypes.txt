@@ -1,0 +1,5 @@
+Naziv,BrojKreveta,InterniNaziv
+One-Bedroom Apartment with Balcony and Sea View,4,A
+Studio with Patio,2,B
+Studio with Patio and Sea View,2,C
+One-Bedroom Apartment with Patio and Sea View,4,D
