@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E40B2E3-DC36-E25C-E08F-0EEF86531E39" name="SRC_Content">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>F458816C-AAAE-0175-ABDB-84230635252E</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<ordsAlias>sadrzaj</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Content_ID" id="59BA21FE-60D9-0FE2-02FC-1FAA697A53F7">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>0E77C984-FED1-CC49-BE67-5813695EE8EB</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Content_Name" id="10EA678C-805A-235E-4A4C-47CE7FD2D2AE">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>A6ADA0B3-5C48-20B4-BE2C-B880F5AA6A51</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Content_Quantity" id="6FBA7A40-79F5-A396-E304-119C36B5A171">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>21AF7888-FBD3-F053-0BF6-9B2890B29BD8</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D920333D-5D63-EF42-8F76-C4C70AE704AA" name="PK_Content">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>32DDA510-4F4C-4C4E-0F31-6FC25D1DEFBB</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59BA21FE-60D9-0FE2-02FC-1FAA697A53F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK Apart Apart Type" directorySegmentName="seg_0" id="EE1BC83A-AEBC-56E6-1B7B-BEE87E9F9158">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:09:50 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<targetPk>7C9F819D-BF2A-3754-C17D-528522CEA587</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>74C54F97-8DD8-9E30-921F-1E1453F08923</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>BE165ABE-2D2C-E6CE-5EEF-028F49A443CA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

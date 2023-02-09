@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7A585965-DF75-33C3-86E1-A94C3C2DE01E" name="SRC PriceList">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:55:34 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Pricelist ID" id="68602C8B-B4EB-38EE-16A9-E91855B1BC1F">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:55:39 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Start Date" id="E1F058DB-15F7-B15D-5DA1-A24B69E88E0C">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:55:44 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End Date" id="6A8A7E2B-06F9-74A8-8115-67BEC02CEF67">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:55:47 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Price Per Night" id="13DA3843-FC20-5D44-269B-5D730A081F6B">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:55:52 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Discount" id="0B8E75D7-3DF5-44B8-FD8D-F80F3AFAB6E2">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:55:55 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apartment ID" id="AF8D974D-F233-1EF9-4066-C8A51B4A5236">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 12:12:32 UTC</createdTime>
+<generatorID>735F1A7A-63A6-2085-763A-5A6E4724B379</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>C6AB9D1D-747D-3510-87F5-71CACD211DA4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8639BD1F-D51C-93AC-9105-FEC3E679405B" name="PK_Pricelist">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:55:59 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>68602C8B-B4EB-38EE-16A9-E91855B1BC1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

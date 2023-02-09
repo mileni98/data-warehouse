@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK Res Guest" directorySegmentName="seg_0" id="0C132C9A-E131-FBC1-15EA-863AB294241B">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:08:13 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<sourcePk>C720DC8C-A6C2-9539-E55F-38DB6BE833CB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C05742C1-52FD-00E3-3F4C-AA96E0186683</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>03246375-F25F-F34A-33B0-607E86E7BBA3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

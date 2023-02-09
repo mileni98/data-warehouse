@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CC45122-54A4-646C-4E5D-FB560B07B6F3" name="SRC_City">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>E893D6AD-6F4B-A7E5-B8E0-20063647E522</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<ordsAlias>grad</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="City_ID" id="AC72CC00-A959-6E07-B173-E954BD0CAFC3">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>237E7DD7-9A74-7EC8-D8FE-7BFC3AFE8A8A</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="City_Name" id="F058E208-29AF-9B03-74D1-11BFFE6F6460">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>07C50143-9039-ECFB-D1C7-CC139B7ED7CE</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Country_ID" id="A120995C-6273-7588-5063-3ACEC1FE0DBB">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>7B843BD1-1192-A342-56E1-B477B1E614E3</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1C3C0E6-A4AA-58D7-D209-791DE722815A" referredColumn="769B7E01-9958-1156-158B-996B19F8DDA0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74D2F945-5818-CB00-C8D7-01F57333BE97" name="PK_City">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>5985768C-D464-F7A2-C6E4-90963BEE392F</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC72CC00-A959-6E07-B173-E954BD0CAFC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A75E98F0-D9A2-F71E-605F-DF03D1EEECE3" name="FK_City_Country">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>6234C5DE-792A-F71F-AB08-696D9FBD743F</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A120995C-6273-7588-5063-3ACEC1FE0DBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

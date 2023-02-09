@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK Occupancy Apart" directorySegmentName="seg_0" id="D609C5AE-61A2-967D-0972-FAAFA225A228">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 12:12:56 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<sourcePk>0D019242-7282-961B-8A5E-81BA90B8ADA6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>74C54F97-8DD8-9E30-921F-1E1453F08923</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>01C42AE3-F241-C899-9CD5-B89E83E5EBE5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F97F5FD8-4701-2E9B-0BB5-8B7FFE5E080D" name="SRC_Reservation">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>03246375-F25F-F34A-33B0-607E86E7BBA3</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<ordsAlias>rezervacija</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Reserviation_ID" id="DE7F6D77-C219-11BF-E991-EC6B7AE4BB3A">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>03338FC6-8D32-40C4-B532-E003A6596FEC</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Booked" id="A81F2850-7C46-F1FC-BD52-A2A10179ABF4">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>E3DC0A1D-7AAE-336A-43BE-52590831E2B5</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Start_Date" id="CAADB4F9-1C28-A3BB-6AFE-2C10CC91C7F2">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>C5A3BA46-7FBF-12E8-0A8C-4A625025E9BC</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="End_Date" id="BB0CF1D2-A118-0FED-0B24-3D07321F1ED5">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>7153B1BA-6AA5-B7C6-6FD5-BFB0DF4B5BC0</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status" id="80C04770-692C-8729-2551-44D0FE44AFB4">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>F7F418FD-A597-1188-9A63-51EEE1A899E0</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>62626A89-9BBC-3D04-3E7A-DF860E544CB9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price" id="7D2D74CF-8155-F590-998F-478D8E2E222C">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>4C6C9846-EC4F-A6E9-EF6D-E9B994DCC340</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Number_Of_Guests" id="24C2DC25-A1F4-6CCE-3D17-421A4ACC813B">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>01C4480A-FFB3-5812-561E-661CA4763EAD</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Payment_Method" id="085649B8-FB1B-3D64-1326-55A0C3503D38">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>36B19A41-0DE8-6964-5A8E-B971FF8BD7A2</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5348B2D5-D34C-F79A-B750-03AA692170F7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Advertiser" id="6E356FB6-A4BE-56F3-0933-EF4A37919BD1">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-02-08 22:10:19 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Guest_ID" id="D42EA4C7-8C3F-C367-36DB-4227DC5669E0">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>B3AB9AB6-D8AD-F854-E5DE-4BBD96DE1170</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA15483E-4AC8-C552-D7D6-901FB18C903F" referredColumn="8F8B6C14-8FA5-9902-572D-480CF1C20261"/>
+</associations>
+</Column>
+<Column name="Apartment_ID" id="7C9AF9A5-CB97-70D5-6FA6-77D112D998BB">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>34551BEE-B3EB-15F4-D332-60970A2D7E7B</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="835E9CA7-052D-2463-8814-3669C92801F7" referredColumn="EC3538BC-5FDD-17B7-FA13-A3AA8585E67C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="482F482D-2918-8405-33FB-9BBC6C184B61" name="PK_Reservation">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>5ED26071-E306-6B68-FF2C-4B7183E0C149</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE7F6D77-C219-11BF-E991-EC6B7AE4BB3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC3D027A-4012-A431-99DA-FDE0F936B2F4" name="FK_Res_Guest">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>0C132C9A-E131-FBC1-15EA-863AB294241B</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D42EA4C7-8C3F-C367-36DB-4227DC5669E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B881BAAF-7050-1CEA-8B83-648B7A6D8B2C" name="FK_Res_Apartm">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-24 13:04:36 UTC</createdTime>
+<generatorID>3C52750B-2EF3-39E9-9251-B40BAF2DA798</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C9AF9A5-CB97-70D5-6FA6-77D112D998BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

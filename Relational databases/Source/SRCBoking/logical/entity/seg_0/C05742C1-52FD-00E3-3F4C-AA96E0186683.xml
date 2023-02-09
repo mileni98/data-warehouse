@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C05742C1-52FD-00E3-3F4C-AA96E0186683" name="SRC Guest">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:28 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Guest ID" id="9D0488A3-BE54-67A4-0583-C93DF08B8D0C">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:35 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Guest Firstname" id="BAE6B85F-077A-0470-C67D-3F634142018D">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:47 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Guest Lastname" id="3AF624BB-ED02-666D-AD75-230599D81627">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:49 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Guest Password" id="AE300C57-AD81-B453-EE2C-D22027038901">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:51 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Guest email" id="99B1E62D-6D53-8903-5E16-04CC9531C4B0">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:53 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Guest Contact" id="8B02095D-8DB8-04F9-30EC-31F16DA96C54">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:55 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Country ID" id="19AD106A-0A1D-D5AB-B3DA-62A83E98052C">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:04:02 UTC</createdTime>
+<generatorID>AA35713D-10BD-CE77-A99C-A6D836A91207</generatorID>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>C9FD22BD-3BD2-BBC0-9699-57D3482C482D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C720DC8C-A6C2-9539-E55F-38DB6BE833CB" name="PK_Guest">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 20:40:43 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9D0488A3-BE54-67A4-0583-C93DF08B8D0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

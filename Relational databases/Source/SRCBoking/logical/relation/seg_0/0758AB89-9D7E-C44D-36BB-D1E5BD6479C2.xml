@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SRC_Contains" directorySegmentName="seg_0" id="0758AB89-9D7E-C44D-36BB-D1E5BD6479C2">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:06:31 UTC</createdTime>
+<ownerDesignName>SRCBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F458816C-AAAE-0175-ABDB-84230635252E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>74C54F97-8DD8-9E30-921F-1E1453F08923</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
