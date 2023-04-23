@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6DDFF8F-FAFA-6843-5E8C-4687C8D6BD90" name="Dim_TipGosta">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:48:47 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idTipGosta" id="E9B3B887-38A9-7D8F-4097-A299720DB85E">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:48:54 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DrzavaGosta" id="A36A0EEE-25C2-9570-45F3-56AC31FEFECA">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:48:58 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7756DB69-BE37-1844-4500-0EF3B644C57E" name="Dim_TipGosta PK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:49:18 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E9B3B887-38A9-7D8F-4097-A299720DB85E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

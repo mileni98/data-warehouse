@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vreme_pocetka_rezervacije" directorySegmentName="seg_0" id="A4FCB22A-EA6F-61DA-6624-25BF9B51BACD">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:57:48 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<sourcePk>CF43A501-6E5B-D169-502C-108555B7D995</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AFF3C4FF-3C3D-0C6D-BADE-13FC95088E03</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4E5408B6-DFF6-3CB5-76CC-361F9C9782E5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E4ACF77-A08D-FE72-52E5-0F095F07FDCC" name="Dim_BrojNocenja">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>351E2D64-2478-FDC1-C465-444CE7F01123</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idBrojNocenja" id="D7D6D891-044C-5353-334C-1B7AA023242D">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>B0302F27-7856-A74F-E3F6-CE1387A7563D</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brojNocenjaOd" id="AB250691-5074-627D-00A5-F34FC32786E9">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>28C90A4E-72C0-052F-1F73-09BAAA8774FC</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brojNocenjaDo" id="975529B1-076C-82AF-0735-DBA207F32324">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>7DC02438-1E91-6723-FE6C-C2AD456EDE14</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brNocenjaInterval" id="202C27E7-3D28-33ED-0A80-4755052CE3E0">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-02-01 08:59:36 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C62E2FB0-42C0-E1D6-516A-33D9F440954C" name="Dim_BrojNocenja_PK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>29C020B4-E96E-50AD-E0C4-DFE91B7685DA</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7D6D891-044C-5353-334C-1B7AA023242D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

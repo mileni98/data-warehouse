@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A8326AC-F72F-74AD-FADE-EAD3622853F0" name="Fct_Poslovanje">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:47:11 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idPoslovanja" id="DA0B2CE3-4B3E-1776-D8F1-1471A3C8905C">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:47:23 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NaplacenoPoNoci" id="A2A6BB78-4F0B-B9C9-0925-99AEE7DF1A73">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:47:26 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NaplacenoUkupno" id="DC618EA3-B724-C830-BEF5-8238B97BB955">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:47:30 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idApartmana" id="DF37C94E-9311-7C04-0BFD-2559A2C5B64F">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:56:07 UTC</createdTime>
+<generatorID>6BA0F313-D6B2-4781-457B-909104E2F1D7</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>3B44BD9E-1910-B030-835F-7A83E631394B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idVreme" id="D9E0F1FE-E40F-1BF1-03B2-E1EF31E7F33C">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:56:28 UTC</createdTime>
+<generatorID>BAFC5C13-9838-E7F2-45C8-B79C1449178C</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>118EF676-BA52-8455-EC99-EEBFAB8FC512</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idBrojNocenja" id="DBDE99CF-3CB1-3CF3-F75C-D35B668C76F8">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:56:34 UTC</createdTime>
+<generatorID>37EA4E04-302C-0CC5-7340-625A446F528F</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>B0302F27-7856-A74F-E3F6-CE1387A7563D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idBrojGostiju" id="221F04C1-0997-9567-51AC-3DF52EC58F7F">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:56:39 UTC</createdTime>
+<generatorID>2FAEFFE2-8770-929C-409C-26663F03EA56</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>1C38218D-CC40-FCEC-783E-9F9EBC6C18B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipGosta" id="F19985DC-5836-D9F2-346B-A638BD5FEB56">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:56:44 UTC</createdTime>
+<generatorID>F3A5F948-2BD3-61BC-1102-02F4CA89FFE3</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>E9B3B887-38A9-7D8F-4097-A299720DB85E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idOglasavac" id="C2D26F4C-A617-86DB-B862-F621BF6824D8">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:56:52 UTC</createdTime>
+<generatorID>CF162291-4D8D-04A9-BE2C-37EE64D995EE</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>91BFA87D-9595-BC41-8398-DC0BE2AB0312</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78988414-8F19-BCED-6418-9310A71284A0" name="Fct_Poslovanje PK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 21:47:59 UTC</createdTime>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA0B2CE3-4B3E-1776-D8F1-1471A3C8905C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

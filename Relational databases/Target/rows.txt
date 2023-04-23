@@ -1,0 +1,23 @@
+--- 1. FCT_POSLOVANJE
+ 													
+id   CheckInDan     nazivApr     tipGosta   brGostiju  Oglasavac |  pricePerNight  priceTotal  brNocenja 
+1   01.01.2022...   Apartman1   Amerikanac   3 do 5     Airbnb   |       30           120          4
+2   08.01.2022...   Apartman1   Norvezanin     2        Airbnb   |       35           70           2   
+
+- ako prelazi u sl nedelju ili mesec da se RAZDVOJI do tog datuma   
+- dodati u rezervaciju OLTP seme Oglasavac - OLTP
+
+
+--- 3. FCT_POLISA_OTKAZIVANJA
+
+id  danOtkazivanja  danPocetkaRez   tipGosta   Oglasavac  nazivApar  UkCena  UkPlaceno  NacinPlacanja  brDanaDoRez  brDanaUnapredRez  Fee
+1     01.01.2022.    05.01.2022.   Amerikanac   Booking    Apartman1   100       0          KES             4              15          0
+2     02.01.2022.    05.01.2022.   Amerikanac   Booking    Apartman1    80       80       KARTICA           3              10          30
+3     05.01.2022.    06.01.2022.   Amerikanac   Booking    Apartman1   120       0          KES             1              20         100
+4     06.01.2022.    11.01.2022.   Amerikanac   Booking    Apartman1   150       0          KES             5              7           0
+
+
+--- 2. FCT_CENOVNA_POLITIKA
+id   CheckInDan      azivApr   brNocenja   pricePerNight  priceTotal  tipNocenja
+1   01.01.2022...   Apartman1     4            30           120       3 do 5 - srednje
+2   08.01.2022...   Apartman1     2            35           70        5 do 7 - duze
