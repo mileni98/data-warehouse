@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40D61394-CDBE-1784-DCB7-E92FFAC6AE4B" name="Fct_Cashflow">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>1A8326AC-F72F-74AD-FADE-EAD3622853F0</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<ordsAlias>fct_poslovanje</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cashflow_id" id="C83692FA-37F0-497D-1B3C-F78B1AB5368C">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>DA0B2CE3-4B3E-1776-D8F1-1471A3C8905C</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apartment_id" id="15ABBD06-B32B-B4DF-33BC-6C284B829998">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>DF37C94E-9311-7C04-0BFD-2559A2C5B64F</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D81E450-FD61-6FF3-7760-83FA2137359E" referredColumn="29DAAA56-0577-A212-1DCE-D1EDB0A373C2"/>
+</associations>
+</Column>
+<Column name="date_id" id="718ED839-6513-348B-9F63-06B5ECDA03A2">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>D9E0F1FE-E40F-1BF1-03B2-E1EF31E7F33C</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20245C6E-F311-502A-C995-5112E4A55B3C" referredColumn="270B93EE-EE39-83A2-4946-A6E94BC84B0F"/>
+</associations>
+</Column>
+<Column name="advertiser_id" id="1A5C28AB-3DB4-5A77-D741-81C34921C85A">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>C2D26F4C-A617-86DB-B862-F621BF6824D8</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00AEBE04-2DAA-8587-7F8B-33BCA6F854F2" referredColumn="35DBB89E-F616-529E-1DDF-C0AB4623DCF5"/>
+</associations>
+</Column>
+<Column name="earnings_for_day" id="C822C52F-A7D9-F65C-8B07-5922D36A1B97">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>A2A6BB78-4F0B-B9C9-0925-99AEE7DF1A73</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6185A724-D8DA-3F0E-06E6-321A96A8F573" name="pk_cashflow">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>78988414-8F19-BCED-6418-9310A71284A0</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C83692FA-37F0-497D-1B3C-F78B1AB5368C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7468B4B6-4A96-54AD-DEAF-AE7A6B4D277A" name="fk_cash_apartment">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>6BA0F313-D6B2-4781-457B-909104E2F1D7</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15ABBD06-B32B-B4DF-33BC-6C284B829998"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC23DCB0-1D1E-1A3B-8CBD-453534EFEA46" name="fk_cash_date">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>BAFC5C13-9838-E7F2-45C8-B79C1449178C</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="718ED839-6513-348B-9F63-06B5ECDA03A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4B769C8-7071-91BF-80BB-CB84FB26E1A2" name="fk_cash_advertiser">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>CF162291-4D8D-04A9-BE2C-37EE64D995EE</generatorID>
+<ownerDesignName>TRGBoking</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A5C28AB-3DB4-5A77-D741-81C34921C85A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
