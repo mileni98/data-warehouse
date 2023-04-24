@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SRCBoking" id="8D9D8DC7-B077-4346-910A-92A0F5C1C6AF" version="3.5">
-<createdBy>Korisnik</createdBy>
-<createdTime>2021-01-20 10:33:53 UTC</createdTime>
-<ownerDesignName>BP_zoo_datamodeler</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>8D9D8DC7-B077-4346-910A-92A0F5C1C6AF</designId>
-</OSDM_Design>
