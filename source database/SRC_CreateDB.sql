@@ -41,7 +41,7 @@ CREATE TABLE "SSP_RES".SRC_Guest (
     guest_lastname   		VARCHAR2(30 CHAR) 	NOT NULL,
     guest_password   		VARCHAR2(30 CHAR) 	NOT NULL,
     guest_email      		VARCHAR2(30 CHAR) 	NOT NULL,
-    guest_contact    		INTEGER 		NOT NULL,
+    guest_contact    		VARCHAR2(30 CHAR)	NOT NULL,
     country_id       		INTEGER 		NOT NULL,
     CONSTRAINT pk_guest PRIMARY KEY ( guest_id )
 );
@@ -84,7 +84,7 @@ CREATE TABLE "SSP_RES".SRC_Apartment_Type (
 CREATE TABLE "SSP_RES".SRC_Apartment (
     apartment_id       		INTEGER 		NOT NULL,
     apartment_status   		VARCHAR2(10) 		NOT NULL,
-    apartment_name     		VARCHAR2(30 CHAR) 	NOT NULL,
+    apartment_name     		VARCHAR2(200 CHAR) 	NOT NULL,
     apartment_number   		INTEGER 		NOT NULL,
     building_id        		INTEGER 		NOT NULL,
     apartment_type_id  		INTEGER 		NOT NULL,
@@ -103,6 +103,7 @@ CREATE TABLE "SSP_RES".SRC_Reservation (
     booked            		DATE 			NOT NULL,
     start_date        		DATE 			NOT NULL,
     end_date          		DATE 			NOT NULL,
+    cancellation_date       DATE,
     status            		VARCHAR2(10) 		NOT NULL,
     price             		FLOAT(4),
     number_of_guests  		INTEGER 		NOT NULL,

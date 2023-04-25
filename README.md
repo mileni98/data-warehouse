@@ -14,3 +14,6 @@ STACKED BAR - https://www.youtube.com/watch?v=MTjubnVTTbU&ab_channel=MatthewHeff
 1. ako gledam po nedelji ne mogu da uzmem od tipa ceo jan jer je on 4.5 nedelja a ovako mogu da agregiram i ukrupnim
 
 giest cont per uear for origin je x osa
+
+
+
