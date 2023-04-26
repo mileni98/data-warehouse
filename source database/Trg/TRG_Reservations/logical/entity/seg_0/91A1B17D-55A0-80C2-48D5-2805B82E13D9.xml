@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="91A1B17D-55A0-80C2-48D5-2805B82E13D9" name="Fct_Price_Policy">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-26 01:25:44 UTC</createdTime>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="price_policy_id" id="9C5D3E91-E310-E6ED-ECB0-1E5BC815053E">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-26 01:26:00 UTC</createdTime>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date id" id="6775A86B-9421-7DE5-8DB8-90F6A8F9D0FF">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-26 01:26:42 UTC</createdTime>
+<generatorID>779647FD-5AB2-1CCC-9123-B6E2F42CE2C3</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>82515FE9-02A0-4F86-EF16-E279226CAAD7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apartment id" id="06E7677A-92A7-DF4B-2D6A-00D87E8E53BE">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-26 01:27:16 UTC</createdTime>
+<generatorID>69ACE864-FE49-797B-D267-16C4A47414B7</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>722E2B80-EC77-0E08-E6D5-4C7F8716E857</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="earnings_for_day" id="968E4ADB-1974-33AE-5142-421A0A18FB6D">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-26 01:26:22 UTC</createdTime>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D2896CB7-B4DE-B1B1-76B3-CD00C4712336" name="pk_price_policy">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-26 01:26:18 UTC</createdTime>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>9C5D3E91-E310-E6ED-ECB0-1E5BC815053E</newElementsIDs>
+<usedAttributes>
+<attributeRef>9C5D3E91-E310-E6ED-ECB0-1E5BC815053E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
