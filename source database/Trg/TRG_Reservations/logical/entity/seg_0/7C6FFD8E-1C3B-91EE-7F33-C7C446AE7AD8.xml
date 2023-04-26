@@ -69,6 +69,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="apartment id" id="3019DE38-2F4F-A695-CF70-55C39A4FD808">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 19:50:51 UTC</createdTime>
+<generatorID>0AAA8227-ADAA-E247-9C78-7372C914791C</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<referedAttribute>722E2B80-EC77-0E08-E6D5-4C7F8716E857</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="average_price_per_day" id="FE9A9A32-AF21-E9F2-EE96-DE19A6A69F54">
 <createdBy>Korisnik</createdBy>
 <createdTime>2023-04-25 19:47:36 UTC</createdTime>
@@ -108,20 +122,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="apartment id" id="3019DE38-2F4F-A695-CF70-55C39A4FD808">
-<createdBy>Korisnik</createdBy>
-<createdTime>2023-04-25 19:50:51 UTC</createdTime>
-<generatorID>0AAA8227-ADAA-E247-9C78-7372C914791C</generatorID>
-<ownerDesignName>TRG_Reservations</ownerDesignName>
-<engineerTo>
-<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
-</engineerTo>
-<referedAttribute>722E2B80-EC77-0E08-E6D5-4C7F8716E857</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
