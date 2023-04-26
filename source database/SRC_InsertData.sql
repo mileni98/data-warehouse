@@ -141,13 +141,20 @@ INSERT INTO "SSP_RES".SRC_Reservation (reserviation_id, booked, start_date, end_
 VALUES (6, TO_DATE('2022-11-10', 'yyyy-mm-dd'), TO_DATE('2022-11-25', 'yyyy-mm-dd'), TO_DATE('2022-11-30', 'yyyy-mm-dd'), NULL,'Confirmed', 600.0, 2, 'Card', 'OLTP', 7, 1);
 
 INSERT INTO "SSP_RES".SRC_Reservation (reserviation_id, booked, start_date, end_date, cancellation_date, status, price, number_of_guests, payment_method, advertiser, guest_id, apartment_id)
-VALUES (9, TO_DATE('2022-06-01', 'yyyy-mm-dd'), TO_DATE('2022-07-15', 'yyyy-mm-dd'), TO_DATE('2022-06-22', 'yyyy-mm-dd'), TO_DATE('2022-07-13', 'yyyy-mm-dd'),'Cancelled', 600.0, 3, 'Card', 'OLTP', 10, 2);
+VALUES (9, TO_DATE('2022-06-01', 'yyyy-mm-dd'), TO_DATE('2022-07-15', 'yyyy-mm-dd'), TO_DATE('2022-07-25', 'yyyy-mm-dd'), TO_DATE('2022-07-13', 'yyyy-mm-dd'),'Cancelled', 600.0, 3, 'Card', 'OLTP', 10, 2);
 
 INSERT INTO "SSP_RES".SRC_Reservation (reserviation_id, booked, start_date, end_date, cancellation_date, status, price, number_of_guests, payment_method, advertiser, guest_id, apartment_id)
-VALUES (10, TO_DATE('2022-12-03', 'yyyy-mm-dd'), TO_DATE('2022-12-10', 'yyyy-mm-dd'), TO_DATE('2022-12-09', 'yyyy-mm-dd'), TO_DATE('2022-12-03', 'yyyy-mm-dd'),'Cancelled', 900.0, 5, 'Card', 'OLTP', 6, 3);
+VALUES (10, TO_DATE('2022-04-04', 'yyyy-mm-dd'), TO_DATE('2022-04-11', 'yyyy-mm-dd'), TO_DATE('2022-04-18', 'yyyy-mm-dd'), TO_DATE('2022-04-03', 'yyyy-mm-dd'),'Cancelled', 432.0, 5, 'Card', 'OLTP', 6, 3);
 
 INSERT INTO "SSP_RES".SRC_Reservation (reserviation_id, booked, start_date, end_date, cancellation_date, status, price, number_of_guests, payment_method, advertiser, guest_id, apartment_id)
-VALUES (11, TO_DATE('2022-01-01', 'yyyy-mm-dd'), TO_DATE('2022-06-10', 'yyyy-mm-dd'), TO_DATE('2022-03-01', 'yyyy-mm-dd'), TO_DATE('2022-06-07', 'yyyy-mm-dd'),'Cancelled', 400.0, 1, 'Cash', 'OLTP', 3, 4);
+VALUES (11, TO_DATE('2022-01-01', 'yyyy-mm-dd'), TO_DATE('2022-06-10', 'yyyy-mm-dd'), TO_DATE('2022-06-12', 'yyyy-mm-dd'), TO_DATE('2022-06-07', 'yyyy-mm-dd'),'Cancelled', 140.0, 1, 'Cash', 'OLTP', 3, 4);
+
+INSERT INTO "SSP_RES".SRC_Reservation (reserviation_id, booked, start_date, end_date, cancellation_date, status, price, number_of_guests, payment_method, advertiser, guest_id, apartment_id)
+VALUES (12, TO_DATE('2022-01-01', 'yyyy-mm-dd'), TO_DATE('2022-06-10', 'yyyy-mm-dd'), TO_DATE('2022-06-12', 'yyyy-mm-dd'), TO_DATE('2022-06-07', 'yyyy-mm-dd'),'Cancelled', 210.0, 1, 'Cash', 'OLTP', 3, 2);
+
+INSERT INTO "SSP_RES".SRC_Reservation (reserviation_id, booked, start_date, end_date, cancellation_date, status, price, number_of_guests, payment_method, advertiser, guest_id, apartment_id)
+VALUES (13, TO_DATE('2022-01-01', 'yyyy-mm-dd'), TO_DATE('2022-06-10', 'yyyy-mm-dd'), TO_DATE('2022-06-12', 'yyyy-mm-dd'), TO_DATE('2022-06-07', 'yyyy-mm-dd'),'Cancelled', 430.0, 1, 'Cash', 'OLTP', 3, 2);
+
 
 commit;
 
