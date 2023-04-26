@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_cash_date" directorySegmentName="seg_0" id="3D4DAFFD-DBC1-8E46-A791-732FA2ADA49E">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>20245C6E-F311-502A-C995-5112E4A55B3C</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<sourcePk>CF99A19B-2B33-CCF0-FF27-7B20C8EEBA04</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DACD4DED-97CA-B877-EAE2-CE0AE5EEFC5A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9DC3627D-726C-7F3A-4331-5BCC56268164</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="450351CB-0117-2749-174B-BC220F1E15A3" mainViewID="722E6217-3A1F-09F4-DEA1-A5D9CAC026AA">
+<createdBy>Korisnik</createdBy>
+<createdTime>2021-01-20 10:33:53 UTC</createdTime>
+<ownerDesignName>BP_zoo_datamodeler</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

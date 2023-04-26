@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A9D1537-86DE-82BE-1937-7E429075FE8F" name="Dim_Guest_Origin">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>E6DDFF8F-FAFA-6843-5E8C-4687C8D6BD90</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<ordsAlias>dim_tipgosta</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="origin_id" id="7D02362D-CD74-2786-68F9-FFA37F2130D3">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>E9B3B887-38A9-7D8F-4097-A299720DB85E</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_name" id="71E7E37D-B62E-5601-78D6-5592CB107598">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>A36A0EEE-25C2-9570-45F3-56AC31FEFECA</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C26C5E4-1316-2642-DC5E-BFBFCF44760B" name="pk_guest_origin">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-23 22:19:58 UTC</createdTime>
+<generatorID>7756DB69-BE37-1844-4500-0EF3B644C57E</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D02362D-CD74-2786-68F9-FFA37F2130D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

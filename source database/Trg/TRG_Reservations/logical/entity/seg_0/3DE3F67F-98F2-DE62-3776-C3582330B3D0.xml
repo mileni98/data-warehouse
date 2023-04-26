@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3DE3F67F-98F2-DE62-3776-C3582330B3D0" name="Dim BrojGostiju">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>DC310DB3-CBE0-6DCF-BB54-6BB18869C10C</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idBrojGostiju" id="393924C2-3EBF-1693-46DD-1AB1538B2D8B">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>0C342C4B-7C3A-4B4C-197F-25265B619F24</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BrojGostijuOd" id="DF1CC0EB-F6A2-74A9-A30C-B2BF43D2A60E">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>51D5FF7C-B3EB-D9C9-85E4-F6B6BE5B7B99</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BrojGostijuDo" id="AADE13A0-3E21-9AEE-97DB-CB770DAAB3FE">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>BB9C644B-2724-809E-2535-91AEA0D32867</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="brGostijuInterval" id="F3E5CFF9-2825-A548-0C9D-9CA0034E86D7">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>ABB12DBA-4AA3-11DE-B38C-B31C5723D643</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D32E6A3F-CF21-6AAF-3E63-DB1249629B0A" name="Dim BrojGostiju PK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>DB58A87C-C505-1F4F-C1F8-9CBA22F3061B</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>393924C2-3EBF-1693-46DD-1AB1538B2D8B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

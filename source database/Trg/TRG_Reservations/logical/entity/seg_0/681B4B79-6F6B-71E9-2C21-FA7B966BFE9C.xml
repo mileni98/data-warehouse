@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="681B4B79-6F6B-71E9-2C21-FA7B966BFE9C" name="Dim Advertiser">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>B7628DEC-35BF-6F7F-E436-D091E003552A</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="advertiser id" id="4274D534-C64D-061F-B9F7-6F9A2F218C3D">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>35DBB89E-F616-529E-1DDF-C0AB4623DCF5</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="advertiser name" id="617AC185-F850-372D-728F-62C7AA824B8B">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>83D5BDB9-B593-2220-51DD-1C935F61F4A4</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7A82D8F3-7DAD-3C2C-4463-4C986454FA5E" name="pk advertiser">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-04-25 15:58:17 UTC</createdTime>
+<generatorID>13822E11-6BB9-81A7-974F-451DDA41E1C9</generatorID>
+<ownerDesignName>TRG_Reservations</ownerDesignName>
+<engineerTo>
+<item key="0652E0C5-94DC-D48F-55FF-2D7FE81777CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4274D534-C64D-061F-B9F7-6F9A2F218C3D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
