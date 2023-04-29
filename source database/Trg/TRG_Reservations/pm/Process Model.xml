@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="83943E10-6248-F764-B769-66A4AC82E758">
-<createdBy>Korisnik</createdBy>
-<createdTime>2021-01-20 10:33:53 UTC</createdTime>
-<ownerDesignName>BP_zoo_datamodeler</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</ProcessModel>
