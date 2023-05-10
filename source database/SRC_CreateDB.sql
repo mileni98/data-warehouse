@@ -105,7 +105,7 @@ CREATE TABLE "SSP_RES".SRC_Reservation (
     end_date          		DATE 			NOT NULL,
     cancellation_date       DATE,
     status            		VARCHAR2(10) 		NOT NULL,
-    price             		FLOAT(4),
+    price             		FLOAT,
     number_of_guests  		INTEGER 		NOT NULL,
     payment_method    		VARCHAR2(10),
     advertiser        		VARCHAR2(30 CHAR) 	NOT NULL,
