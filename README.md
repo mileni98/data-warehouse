@@ -1,8 +1,8 @@
 # Data Warehouse Project
 
-The goal of this project is to create a Data Warehousing system that will provide apartment advertisers with helpful insights into their business performances. This will be implemented through an ECTL process, where input data is taken from various sources (Excel files, .txt files, and an OLTP database), preprocessed, transformed, and stored into a target relational database for querying.
+The objective of this project is to create a Data Warehousing system that can provide apartment advertisers with insights into their business performance. This will be achieved through an ECTL process, where data from various sources such as Excel files, text files, and an OLTP database will be preprocessed, transformed, and stored into a target relational database for querying.
 
-Three main business topics to cover are:
+The project will focus on three main business topics:
 
 1. Monitoring the cash flow and number of nights stayed for each apartment in relation to the advertising method. Additionally, track the number of booked nights based on the guests' origin.
 2. Supporting decision-making on implementing a new pricing policy for a specific number of overnight stays, based on factors such as booked stay length and occupancy rate.
@@ -11,7 +11,7 @@ Three main business topics to cover are:
 
 ## System Architecture
 
-In the following picture, a pipeline architecture for this system is presented.
+The system architecture for this project is presented in the following pipeline diagram:
 
 <p align="center">
   <img src="https://github.com/mileni98/data-warehouse/assets/73794793/9d1d54f8-fa69-4438-86c4-2d6f6057bf3c" alt="System Architecture" style="width: 85%; display: block; margin-left: auto; margin-right: auto;">
@@ -20,7 +20,7 @@ In the following picture, a pipeline architecture for this system is presented.
 
 ## Source OLTP Schema
 
-The following image shows an ER schema for the database of one of the sources that was created for this project. This is a schema for a booking reservation system application, for which data was artificially created.
+The ER schema for the database of one of the sources created for this project is shown in the following image. This schema represents a booking reservation system application, for which data was artificially generated.
 
 <p align="center">
   <img src="https://github.com/mileni98/data-warehouse/assets/73794793/d27d27b0-e790-4386-8bb4-c4327a2798cf" alt="Source OLTP Schema" style="width: 85%; display: block; margin-left: auto; margin-right: auto;">
@@ -48,9 +48,10 @@ To use this project, follow these steps:
 6. Install Metabase and connect it to the PostgreSQL DW database by going to localhost:3000.
 7. Visualize and analyze the data by performing various queries using Metabase.
 
+
 ## Querry example
 
-You can find several SQL queries in the query.txt file. Here's an example query that shows the number of stay nights and average price per night per month for a specific apartment:
+You can find several SQL queries supporting 3 tasked themes in the **query.txt** file. Here's an example query that shows the number of stay nights and average price per night per month for a specific apartment:
 
 ```sql
 SELECT
@@ -64,10 +65,10 @@ GROUP BY "Dim Dates"."month_name", "Dim Dates"."month"
 ORDER BY "Dim Dates"."month"
 ```
 
-Here's an output of the previous query:
+Here's an output of the previous query:     
 
 <p align="center">
-  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/e8cf9a6a-6395-4b62-bf58-288ffcf7f293" style="width: 85%; display: block; margin-left: auto; margin-right: auto;">
+  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/e8cf9a6a-6395-4b62-bf58-288ffcf7f293" style="width: 95%; display: block; margin-left: auto; margin-right: auto;">
 </p>
 
 ## Dependencies
