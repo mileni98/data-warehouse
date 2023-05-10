@@ -1,0 +1,20 @@
+# 1. Report - Comparison of the income that each of the apartments achieved depending on the method of advertising for the year 2022
+
+SELECT "Dim Advertiser"."Advertiser" AS "Dim Advertiser__Advertiser", "Dim Apartment"."Listing name" AS "Dim Apartment__Listing name", SUM("public"."fct_Cashflow"."Price per day") AS "sum"
+FROM "public"."fct_Cashflow" 
+INNER JOIN "public"."dim_Advertiser" AS "Dim Advertiser" ON "public"."fct_Cashflow"."advertiser_id" = "Dim Advertiser"."advertiser_id" 
+INNER JOIN "public"."dim_Apartment" AS "Dim Apartment" ON "public"."fct_Cashflow"."apartment_id" = "Dim Apartment"."apartment_id"
+LEFT JOIN "public"."dim_Dates" AS "Dim Dates" ON "public"."fct_Cashflow"."date_id" = "Dim Dates"."date_id"
+WHERE "Dim Dates"."year" = 2022
+GROUP BY "Dim Advertiser"."Advertiser", "Dim Apartment"."Listing name"
+ORDER BY "Dim Advertiser"."Advertiser" ASC, "Dim Apartment"."Listing name" ASC
+
+
+# 2. Report -  Total number of stay nights by guests of different origins, show top 10
+
+SELECT "Dim Guest Origin"."Origin" AS "Dim Guest Origin__Origin", COUNT(*) AS "count", AVG("public"."fct_Cashflow"."Price per day") AS "avg"
+FROM "public"."fct_Cashflow"
+LEFT JOIN "public"."Dim_Guest_Origin" AS "Dim Guest Origin" ON "public"."fct_Cashflow"."origin_id" = "Dim Guest Origin"."origin_id"
+GROUP BY "Dim Guest Origin"."Origin"
+ORDER BY "count" DESC, "Dim Guest Origin"."Origin" ASC
+LIMIT 10

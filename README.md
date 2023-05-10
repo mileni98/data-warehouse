@@ -8,6 +8,11 @@ The project will focus on three main business topics:
 2. Supporting decision-making on implementing a new pricing policy for a specific number of overnight stays, based on factors such as booked stay length and occupancy rate.
 5. Supporting decision-making around implementing a cancellation policy, considering factors like length of stay, booking lead time, and reservation price, to determine cancellation timelines without penalties.
 
+## Files Overview
+
+The **Preprocessing folder** contains data from different sources that has been extracted and cleaned, with additional columns added. The data is transformed into a dataframe with the same attributes for each source, and then exported as Excel files.
+
+In the **ETL folder**, the exported Excel files are loaded, transformations are performed, and fact and dimension tables are created. These tables are then loaded onto the server.
 
 ## System Architecture
 
@@ -51,7 +56,7 @@ To use this project, follow these steps:
 
 ## Querry example
 
-You can find several SQL queries supporting 3 tasked themes in the **query.txt** file. Here's an example query that shows the number of stay nights and average price per night per month for a specific apartment:
+You can find several SQL queries supporting 3 tasked themes in the **queries folder**. Here's an example query that shows the number of stay nights and average price per night per month for all apartments combined:
 
 ```sql
 SELECT

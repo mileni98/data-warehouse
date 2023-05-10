@@ -1,0 +1,24 @@
+# 1. Report -  number of stay nights and average price per night per month for all apartments combined
+
+SELECT
+    "Dim Dates"."month_name" AS "Dim Dates__month_name",
+    COUNT("public"."fct_Price_Policy"."Price per day") AS "count",
+    AVG("public"."fct_Price_Policy"."Price per day") AS "avg"
+FROM "public"."dim_Dates" AS "Dim Dates"
+LEFT JOIN "public"."fct_Price_Policy" ON "public"."fct_Price_Policy"."date_id" = "Dim Dates"."date_id"
+INNER JOIN "public"."dim_Apartment" AS "Dim Apartment" ON "public"."fct_Price_Policy"."apartment_id" = "Dim Apartment"."apartment_id"
+GROUP BY "Dim Dates"."month_name", "Dim Dates"."month"
+ORDER BY "Dim Dates"."month"
+
+
+# 2. Report - Average price of a night depending on the length of stay, where the length of stay is given in characteristic time frames, 0-2 days, 3-5 days, etc.
+
+SELECT "Dim Length Of Stay"."length_of_interval" AS "Dim Length Of Stay__length_of_interval", "Dim Apartment"."Listing name" AS "Dim Apartment__Listing name", (FLOOR((("public"."fct_Price_Policy"."length_of_stay_id" - 1.0) / (1.0 / 2.0))) * (1.0 / 2.0)) + 1.0 AS "length_of_stay_id", AVG("public"."fct_Price_Policy"."Price per day") AS "avg"
+FROM "public"."fct_Price_Policy" 
+INNER JOIN "public"."dim_Dates" AS "Dim Dates" ON "public"."fct_Price_Policy"."date_id" = "Dim Dates"."date_id" 
+INNER JOIN "public"."Dim_Length_Of_Stay" AS "Dim Length Of Stay" ON "public"."fct_Price_Policy"."length_of_stay_id" = "Dim Length Of Stay"."length_of_stay_id" 
+INNER JOIN "public"."dim_Apartment" AS "Dim Apartment" ON "public"."fct_Price_Policy"."apartment_id" = "Dim Apartment"."apartment_id"
+WHERE ("Dim Apartment"."Listing name" = 'One-Bedroom Apartment with Balcony and Sea View')
+    OR ("Dim Apartment"."Listing name" = 'Studio with Patio')
+GROUP BY "Dim Length Of Stay"."length_of_interval", "Dim Apartment"."Listing name", (FLOOR((("public"."fct_Price_Policy"."length_of_stay_id" - 1.0) / (1.0 / 2.0))) * (1.0 / 2.0)) + 1.0
+ORDER BY (FLOOR((("public"."fct_Price_Policy"."length_of_stay_id" - 1.0) / (1.0 / 2.0))) * (1.0 / 2.0)) + 1.0 ASC, "Dim Length Of Stay"."length_of_interval" ASC, "Dim Apartment"."Listing name" ASC

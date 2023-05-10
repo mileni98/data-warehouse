@@ -1,0 +1,38 @@
+# 1. Report - Comparative presentation of the percentage ratio of canceled and realized reservations in relation to the period for which the accommodation was 
+reserved in advance, where these periods are categorized in characteristic time frames, 0-2 days, 7-14 days, etc.
+
+SELECT "Dim Days Prebooked"."prebook_interval" AS "Dim Days Prebooked__prebook_interval", "public"."fct_Cancelation_Policy"."Status" AS "Status", COUNT(*) AS "count"
+FROM "public"."fct_Cancelation_Policy" 
+INNER JOIN "public"."dim_Dates" AS "Dim Dates" ON "public"."fct_Cancelation_Policy"."date_id" = "Dim Dates"."date_id" 
+INNER JOIN "public"."dim_Apartment" AS "Dim Apartment" ON "public"."fct_Cancelation_Policy"."apartment_id" = "Dim Apartment"."apartment_id"
+INNER JOIN "public"."Dim_Days_Prebooked" AS "Dim Days Prebooked" ON "public"."fct_Cancelation_Policy"."prebook_id" = "Dim Days Prebooked"."prebook_id" 
+INNER JOIN "public"."Dim_No_Days_Cancelled" AS "Dim No Days Cancelled" ON "public"."fct_Cancelation_Policy"."cancel_id" = "Dim No Days Cancelled"."cancel_id"
+WHERE "Dim Dates"."year" = 2022
+GROUP BY "Dim Days Prebooked"."prebook_interval", "public"."fct_Cancelation_Policy"."Status"
+ORDER BY "Dim Days Prebooked"."prebook_interval" ASC, "public"."fct_Cancelation_Policy"."Status" ASC
+
+
+# 2. Report - Numerical value of canceled reservations in relation to the total number of canceled reservations, by the period in which the reservation was canceled in advance
+
+SELECT "Dim No Days Cancelled"."cancel_interval" AS "Dim No Days Cancelled__cancel_interval", COUNT(*) AS "count"
+FROM "public"."fct_Cancelation_Policy" INNER JOIN "public"."dim_Dates" AS "Dim Dates" ON "public"."fct_Cancelation_Policy"."date_id" = "Dim Dates"."date_id" 
+INNER JOIN "public"."Dim_Days_Prebooked" AS "Dim Days Prebooked" ON "public"."fct_Cancelation_Policy"."prebook_id" = "Dim Days Prebooked"."prebook_id" 
+INNER JOIN "public"."Dim_No_Days_Cancelled" AS "Dim No Days Cancelled" ON "public"."fct_Cancelation_Policy"."cancel_id" = "Dim No Days Cancelled"."cancel_id"
+INNER JOIN "public"."dim_Apartment" AS "Dim Apartment" ON "public"."fct_Cancelation_Policy"."apartment_id" = "Dim Apartment"."apartment_id"
+WHERE ("Dim Dates"."year" = 2022)
+   AND ("public"."fct_Cancelation_Policy"."Status" = 'Cancelled')
+GROUP BY "Dim No Days Cancelled"."cancel_interval"
+ORDER BY "Dim No Days Cancelled"."cancel_interval" ASC
+
+
+# 3. Report - Depending on the period how far in advance the reservation was made, for a canceled reservation, the average price of the stay night of the reservation for year 2022
+
+SELECT "Dim Days Prebooked"."prebook_interval" AS "Dim Days Prebooked__prebook_interval", COUNT(*) AS "count", AVG("public"."fct_Cancelation_Policy"."avg_rate_per_reservation") AS "avg"
+FROM "public"."fct_Cancelation_Policy" INNER JOIN "public"."dim_Dates" AS "Dim Dates" ON "public"."fct_Cancelation_Policy"."date_id" = "Dim Dates"."date_id" 
+INNER JOIN "public"."Dim_Days_Prebooked" AS "Dim Days Prebooked" ON "public"."fct_Cancelation_Policy"."prebook_id" = "Dim Days Prebooked"."prebook_id"
+INNER JOIN "public"."Dim_No_Days_Cancelled" AS "Dim No Days Cancelled" ON "public"."fct_Cancelation_Policy"."cancel_id" = "Dim No Days Cancelled"."cancel_id"
+INNER JOIN "public"."dim_Apartment" AS "Dim Apartment" ON "public"."fct_Cancelation_Policy"."apartment_id" = "Dim Apartment"."apartment_id"
+WHERE ("Dim Dates"."year" = 2022)
+   AND ("public"."fct_Cancelation_Policy"."Status" = 'Cancelled')
+GROUP BY "Dim Days Prebooked"."prebook_interval"
+ORDER BY "Dim Days Prebooked"."prebook_interval" ASC
