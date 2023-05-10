@@ -8,11 +8,15 @@ The project will focus on three main business topics:
 2. Supporting decision-making on implementing a new pricing policy for a specific number of overnight stays, based on factors such as booked stay length and occupancy rate.
 5. Supporting decision-making around implementing a cancellation policy, considering factors like length of stay, booking lead time, and reservation price, to determine cancellation timelines without penalties.
 
-## Files Overview
+
+## Folders Overview
 
 The **Preprocessing folder** contains data from different sources that has been extracted and cleaned, with additional columns added. The data is transformed into a dataframe with the same attributes for each source, and then exported as Excel files.
 
 In the **ETL folder**, the exported Excel files are loaded, transformations are performed, and fact and dimension tables are created. These tables are then loaded onto the server.
+
+The **Queries folder** contains SQL code for querying the data that has been loaded onto the server. Use these queries to analyze and visualize the data.
+
 
 ## System Architecture
 
