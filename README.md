@@ -1,6 +1,6 @@
 # Data Warehouse Project
 
-The goal of this project is to create a Data Warehousing system that will provide apartment advertisers with helpful insights into their business performances. This will be implemented through an ECTL process, where input data is taken from various sources (Excel files, .txt files, and an OLTP database), transformed, and stored into a target relational database for querying.
+The goal of this project is to create a Data Warehousing system that will provide apartment advertisers with helpful insights into their business performances. This will be implemented through an ECTL process, where input data is taken from various sources (Excel files, .txt files, and an OLTP database), preprocessed, transformed, and stored into a target relational database for querying.
 
 Three main business topics to cover are:
 
@@ -23,16 +23,16 @@ In the following picture, a pipeline architecture for this system is presented.
 The following image shows an ER schema for the database of one of the sources that was created for this project. This is a schema for a booking reservation system application, for which data was artificially created.
 
 <p align="center">
-  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/d27d27b0-e790-4386-8bb4-c4327a2798cf" alt="Source OLTP Schema" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
+  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/d27d27b0-e790-4386-8bb4-c4327a2798cf" alt="Source OLTP Schema" style="width: 85%; display: block; margin-left: auto; margin-right: auto;">
 </p>
 
 
 ## Target DW OLAP Schema
 
-The following image shows an ER schema for the target data warehouse database. It includes fact and dimension tables and is suitable for supporting all three topics this project had to cover.
+The following image shows an ER schema for the target Data Warehouse database. It includes fact and dimension tables and is suitable for supporting all three topics this project had to cover.
 
 <p align="center">
-  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/5af15e9f-4ae4-44ba-a76c-85cdaf0736c1" alt="Target Data Warehouse Schema" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
+  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/5af15e9f-4ae4-44ba-a76c-85cdaf0736c1" alt="Target Data Warehouse Schema" style="width: 85%; display: block; margin-left: auto; margin-right: auto;">
 </p>
 
 
@@ -46,21 +46,28 @@ To use this project, follow these steps:
 4. In CMD, run the command "icacls run.sh /grant Everyone:(RX)" to grant execute permissions to the run script.
 5. Double-click the run.sh file to execute the ETL process.
 6. Install Metabase and connect it to the PostgreSQL DW database by going to localhost:3000.
-7. Perform various queries using Metabase to analyze the data.
+7. Visualize and analyze the data by performing various queries using Metabase.
 
+## Querry example
 
-## ECTL Processes for 3 tasks
+You can find several SQL queries in the query.txt file. Here's an example query that shows the number of stay nights and average price per night per month for a specific apartment:
+
+```sql
+SELECT
+    "Dim Dates"."month_name" AS "Dim Dates__month_name",
+    COUNT("public"."fct_Price_Policy"."Price per day") AS "count",
+    AVG("public"."fct_Price_Policy"."Price per day") AS "avg"
+FROM "public"."dim_Dates" AS "Dim Dates"
+LEFT JOIN "public"."fct_Price_Policy" ON "public"."fct_Price_Policy"."date_id" = "Dim Dates"."date_id"
+INNER JOIN "public"."dim_Apartment" AS "Dim Apartment" ON "public"."fct_Price_Policy"."apartment_id" = "Dim Apartment"."apartment_id"
+GROUP BY "Dim Dates"."month_name", "Dim Dates"."month"
+ORDER BY "Dim Dates"."month"
+```
+
+Here's an output of the previous query:
 
 <p align="center">
-  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/c60fd985-2ed8-43ad-b3de-e0f8f97c6bd9" alt=""  style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
-</p>
-
-<p align="center">
-  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/0196711c-68f8-44fe-b4b8-fc6fb76f6f63" alt=""  style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
-</p>
-
-<p align="center">
-  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/a20e9c29-bb47-4ba3-9823-2d4be7dd7dee" alt=""  style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
+  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/e8cf9a6a-6395-4b62-bf58-288ffcf7f293" style="width: 85%; display: block; margin-left: auto; margin-right: auto;">
 </p>
 
 ## Dependencies
