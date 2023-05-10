@@ -1,6 +1,10 @@
 # Data Warehouse Project
 
-![architecture](https://github.com/mileni98/data-warehouse/assets/73794793/9d1d54f8-fa69-4438-86c4-2d6f6057bf3c)
+<p align="center">
+  <img src="https://github.com/mileni98/data-warehouse/assets/73794793/9d1d54f8-fa69-4438-86c4-2d6f6057bf3c" alt="System Architecture" style="width: 85%; display: block; margin-left: auto; margin-right: auto;">
+</p>
+
+
 
 ## Running the application
 
