@@ -17,6 +17,9 @@ In the **ETL folder**, the exported Excel files are loaded, transformations are 
 
 The **Queries folder** contains SQL code for querying the data that has been loaded onto the server. Use these queries to analyze and visualize the data.
 
+The **Source database folder** contains SQL code creating tables for source OLTP database, and filling it with mock data.
+
+
 
 ## System Architecture
 
