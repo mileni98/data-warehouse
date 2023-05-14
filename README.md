@@ -55,10 +55,11 @@ To use this project, follow these steps:
 1. Create an "original files" directory in the "preprocessing" folder.
 2. Download the Airbnb, Booking, and ApartmentTypes files (currently unavailable).
 3. Ensure that you have working OracleDB and PostgreSQL servers with connection details used in the ETL files.
-4. In CMD, run the command "icacls run.sh /grant Everyone:(RX)" to grant execute permissions to the run script.
-5. Double-click the run.sh file to execute the ETL process.
-6. Install Metabase and connect it to the PostgreSQL DW database by going to localhost:3000.
-7. Visualize and analyze the data by performing various queries using Metabase.
+4. Execute the "SRC_CreateDB" and "SRC_InsertData" scripts in OracleDB SQLDeveloper.
+5. In CMD, run the command "icacls run.sh /grant Everyone:(RX)" to grant execute permissions to the run script.
+6. Double-click the run.sh file to execute the ETL process.
+7. Install Metabase and connect it to the PostgreSQL DW database by going to localhost:3000.
+8. Visualize and analyze the data by performing various queries using Metabase.
 
 
 ## Querry example
